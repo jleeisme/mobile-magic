@@ -21,6 +21,7 @@ var options = {
   index: 0 // start at first slide
 };
 
+// move to an on click event on a picture
 // Initializes and opens PhotoSwipe
 var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 gallery.init();
