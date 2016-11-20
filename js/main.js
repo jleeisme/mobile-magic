@@ -12,11 +12,14 @@
             $size = $(this).data('size').split('x'),
             $width = $size[0],
             $height = $size[1];
+            // $caption = $(this).find('figcaption').html();
+            $title = $(this).find('img').attr('alt');
 
           var item = {
             src : $href,
             w : $width,
-            h : $height
+            h : $height,
+            title : $title
           }
 
           items.push(item);
