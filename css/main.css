@@ -6,6 +6,7 @@ body {
   margin: 0;
 }
 
+*,
 *:before,
 *:after {
   box-sizing: inherit;
@@ -24,7 +25,7 @@ body {
   float: left;
   width: 100%;
   height: auto;
-  margin-top: 5px;
+  /*margin-top: 5px;*/
   margin-bottom: 5px;
 }
 
@@ -43,4 +44,6 @@ img {
   width: auto;
   max-width: 100%;
   height: auto;
+  margin: 1px;
+  padding: 1px;
 }
