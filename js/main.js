@@ -1,5 +1,5 @@
 (function($) {
-  var $pswp = $('.pswp')[0];
+  var $pswp = $('.pswp')[0];// necessary for Photoswipe
   var image = [];
 
   $('.image-holder-inner').each( function() {
@@ -11,8 +11,7 @@
           var $href = $(this).attr('href'),
             $size = $(this).data('size').split('x'),
             $width = $size[0],
-            $height = $size[1];
-            // $caption = $(this).find('figcaption').html();
+            $height = $size[1],
             $title = $(this).find('img').attr('alt');
 
           var item = {
