@@ -28,6 +28,10 @@ img {
   /*padding: 1px;*/
 }
 
+h2 {
+  font-size: 1.5vw;
+}
+
 .image-holder-outer {
   overflow: hidden;
   max-width: 99%;
@@ -60,7 +64,7 @@ img {
     float: left;
     width: 33.3333%;
     margin: 0;
-    margin-bottom: -6px;
+    margin-bottom: -3px;
   }
 
   figure.image-box {
@@ -71,7 +75,7 @@ img {
     /*overflow: hidden;*/
     width: 33.3333333%;
     background: #000;
-    /*text-align: center;*/
+    text-align: center;
   }
 
   figure.image-box img {
@@ -165,8 +169,8 @@ img {
 
   figure.image-box:hover figcaption::before {
     background: rgba(255, 255, 255, 0);
-    top: 30px;
-    bottom: 30px;
+    top: 40px;
+    bottom: 40px;
     opacity: 1;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
