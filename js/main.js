@@ -6,7 +6,7 @@
     var $pic = $(this),
       getItems = function() {
         var items = [];
-        console.log(items);
+        // console.log(items);
         $pic.find('a').each(function() {
           var $href = $(this).attr('href'),
             $size = $(this).data('size').split('x'),
