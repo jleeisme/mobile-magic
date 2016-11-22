@@ -20,29 +20,37 @@ a {
 }
 
 img {
-  width: auto;
+  /*width: auto;*/
   max-width: 100%;
   height: auto;
-  margin: 1px;
-  padding: 1px;
+  border: 1px solid #000;
+  /*margin: 1px;*/
+  /*padding: 1px;*/
+}
+
+h2 {
+  font-size: 1.5vw;
 }
 
 .image-holder-outer {
   overflow: hidden;
-  max-width: 100%;
+  max-width: 99%;
   width: 100%;
-  position: relative;
-  /*margin-top: 4px;*/
+  /*position: relative;*/
+  margin-top: 0.5%;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  padding: 0;
+  /*display: block;*/
 }
 
 .image-holder-inner {
   overflow: hidden;
-  float: left;
-  width: 100%;
-  height: auto;
+  padding: 0;
+
+  /*float: left;*/
+  /*width: 100%;*/
+  /*height: auto;*/
 }
 
 @media screen and (max-width: 630px) {
@@ -56,18 +64,19 @@ img {
     float: left;
     width: 33.3333%;
     margin: 0;
-    margin-bottom: -6px;
+    margin-bottom: -3px;
   }
 
   figure.image-box {
-    font-family: Arial;
+    /*font-family: Arial;*/
     color: #fff;
     /*float: left;*/
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 33.3333333%;
     background: #000;
     text-align: center;
+    cursor: pointer;
   }
 
   figure.image-box img {
@@ -161,10 +170,41 @@ img {
 
   figure.image-box:hover figcaption::before {
     background: rgba(255, 255, 255, 0);
-    top: 30px;
-    bottom: 30px;
+    top: 40px;
+    bottom: 40px;
     opacity: 1;
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
+  }
+
+  .header {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .header h1 {
+    margin: 0;
+  }
+
+  .header nav ul {
+    display: inline-block;
+    /*width: 100%;*/
+    margin: 0;
+    padding: 0;
+    list-style: none; 
+  }
+
+  .header nav {
+    float: right;
+  }
+
+  .nav-item {
+    list-style: none;
+    display: inline-block;
+    position: relative;
+  }
+
+  .header h1 {
+    float: left;
   }
 }
