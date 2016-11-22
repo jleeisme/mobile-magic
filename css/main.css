@@ -20,29 +20,33 @@ a {
 }
 
 img {
-  width: auto;
+  /*width: auto;*/
   max-width: 100%;
   height: auto;
-  margin: 1px;
-  padding: 1px;
+  border: 1px solid #000;
+  /*margin: 1px;*/
+  /*padding: 1px;*/
 }
 
 .image-holder-outer {
   overflow: hidden;
-  max-width: 100%;
+  max-width: 99%;
   width: 100%;
-  position: relative;
-  /*margin-top: 4px;*/
+  /*position: relative;*/
+  margin-top: 0.5%;
   margin-left: auto;
   margin-right: auto;
-  display: block;
+  padding: 0;
+  /*display: block;*/
 }
 
 .image-holder-inner {
   overflow: hidden;
-  float: left;
-  width: 100%;
-  height: auto;
+  padding: 0;
+
+  /*float: left;*/
+  /*width: 100%;*/
+  /*height: auto;*/
 }
 
 @media screen and (max-width: 630px) {
@@ -60,14 +64,14 @@ img {
   }
 
   figure.image-box {
-    font-family: Arial;
+    /*font-family: Arial;*/
     color: #fff;
     /*float: left;*/
     position: relative;
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 33.3333333%;
     background: #000;
-    text-align: center;
+    /*text-align: center;*/
   }
 
   figure.image-box img {
