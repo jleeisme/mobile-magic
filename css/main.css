@@ -17,10 +17,10 @@ a {
 }
 
 .image-holder-outer {
-  max-width: 99%;
+  max-width: 100%;
   width: 100%;
   position: relative;
-  margin-top: 4px;
+  /*margin-top: 4px;*/
   margin-left: auto;
   margin-right: auto;
   display: block;
@@ -41,10 +41,10 @@ a {
 figure.image-box {
   font-family: Arial;
   color: #fff;
-  float: left;
+  /*float: left;*/
   position: relative;
   overflow: hidden;
-  /*width: 100%;*/
+  width: 33.3333333%;
   background: #000;
   text-align: center;
 }
@@ -84,14 +84,8 @@ figure.image-box figcaption::before {
   transition-delay: 0.6s;
 }
 
-/*figure.image-box figcaption h2::before {
-  top: 50%;
-  bottom: 50%;
-}*/
-
-figure.image-box h2,
-figure.image-box p {
-  margin: 0 0 5px;
+figure.image-box h2 {
+  margin: 0;
   opacity: 0;
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s,-webkit-transform 0.35s,-moz-transform 0.35s,-o-transform 0.35s,transform 0.35s;
@@ -115,16 +109,17 @@ figure.image-box p {
   -webkit-transition-delay: 0s;
   transition-delay: 0s;
 }
-figure.image-box a {
-/*  left: 0;
+/*figure.image-box a {
+  left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  position: absolute;*/
-  /*color: #ffffff;*/
-}
+  position: absolute;
+  color: #ffffff;
+}*/
 figure.image-box:hover img {
   opacity: 0.35;
+  width: 100%;
 }
 
 figure.image-box:hover figcaption h2 {
