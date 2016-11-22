@@ -1,4 +1,15 @@
 (function($) {
+  
+  $(window).scroll(function () {
+    var sc = $(window).scrollTop()
+    if (sc > 100) {
+      $(".header").addClass("small")
+    } else {
+      $(".header").removeClass("small")
+    }
+  });
+
+
   var $pswp = $('.pswp')[0];// necessary for Photoswipe
   var image = [];
 
