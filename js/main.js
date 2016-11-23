@@ -1,8 +1,8 @@
 (function($) {
   
   $(window).scroll(function () {
-    var sc = $(window).scrollTop()
-    if (sc > 100) {
+    var scroll = $(window).scrollTop()
+    if (scroll > 100) {
       $(".header").addClass("small")
     } else {
       $(".header").removeClass("small")

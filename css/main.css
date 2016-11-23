@@ -58,6 +58,8 @@ h2 {
   /*height: auto;*/
 }
 
+
+/* max & min width 48em --- 768px*/
 @media screen and (max-width: 630px) {
   figure.image-box h2 {
     display: none;
@@ -73,7 +75,6 @@ h2 {
   }
 
   figure.image-box {
-    /*font-family: Arial;*/
     color: #fff;
     /*float: left;*/
     position: relative;
@@ -186,7 +187,7 @@ h2 {
   }
 
   .header {
-    width: 100%;
+    width: 99%;
     top: 0;
     position: fixed;
     background-color: #fff; 
@@ -203,6 +204,7 @@ h2 {
 
   .header.small {
     height: 40px;
+    border-bottom: 1px solid #000;
   }
 
   .header.small h1 {
@@ -215,7 +217,7 @@ h2 {
 
   .header h1 {
     margin: 0;
-    line-height: 65px;
+    line-height: 75px;
     -ms-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out;
@@ -235,12 +237,13 @@ h2 {
 
   .header nav {
     float: right;
-    line-height: 54px;
+    line-height: 65px;
     -ms-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
     -webkit-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
+    padding-right: 10px;
     /*padding: 10px;*/
   }
 
