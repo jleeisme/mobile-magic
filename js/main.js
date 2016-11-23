@@ -3,7 +3,7 @@
   // header scroller
   $(window).scroll(function () {
     var scroll = $(window).scrollTop()
-    if (scroll > 100) {
+    if (scroll > 10) {
       $(".header").addClass("small")
     } else {
       $(".header").removeClass("small")
@@ -16,15 +16,28 @@
   });
 
   // off canvas panel
-  var panelExample = $('#panel').scotchPanel({
-    containerSelector: 'body', // Make this appear on the entire screen
-    direction: 'right', // Make it toggle in from the left
-    duration: 300, // Speed in ms how fast you want it to be
-    transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
-    clickSelector: '#nav-icon', // Enables toggling when clicking elements of this class
-    distanceX: '30%', // Size fo the toggle
-    enableEscapeKey: true // Clicking Esc will close the panel
+  $(window).resize(function() {
+    if ($(window).width() <= 769) {  
+      var panelExample = $('#panel').scotchPanel({
+        containerSelector: 'body', // Make this appear on the entire screen
+        direction: 'right', // Make it toggle in from the left
+        duration: 300, // Speed in ms how fast you want it to be
+        transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
+        clickSelector: '#nav-icon', // Enables toggling when clicking elements of this class
+        distanceX: '30%', // Size fo the toggle
+        enableEscapeKey: true // Clicking Esc will close the panel
+      });
+    panelExample.close();
+    }
+    // else {
+    //   scotchPanel.close();
+    // }
   });
+  // $(window).resize(function() {
+  //   if ($(window).width() >= 769 && $('.scotch-panel-canvas').hasClass('scotch-is-showing')) {
+  //     scotchPanel.close();
+  //   }
+  // });
 
   // Photoswipe
   var $pswp = $('.pswp')[0];// necessary for Photoswipe
