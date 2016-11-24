@@ -1,4 +1,31 @@
+
+
 (function($) {
+
+  // var $window = $(window);
+
+  function checkWidth() {
+    var windowSize = $(window).width();
+    if ($(window).width() > 769) {
+      $('.scotch-panel-canvas').removeAttr('style');
+    }
+    // if ($(window).width() <= 769) {
+    //   $('.scotch-panel-canvas').attr('style');
+    // }
+    else {
+      return;
+    }
+  }
+
+  function windowResize() {
+    if ($(window).resize) {
+      checkWidth();
+    }
+  }
+  
+  // else {
+  //   $('scotch-panel-canvas').attr('style');
+  // }
   
   // header scroller
   $(window).scroll(function () {
@@ -15,24 +42,26 @@
     $(this).toggleClass('open');
   });
 
-  // off canvas panel
-  $(window).resize(function() {
-    if ($(window).width() <= 769) {  
-      var panelExample = $('#panel').scotchPanel({
-        containerSelector: 'body', // Make this appear on the entire screen
-        direction: 'right', // Make it toggle in from the left
-        duration: 300, // Speed in ms how fast you want it to be
-        transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
-        clickSelector: '#nav-icon', // Enables toggling when clicking elements of this class
-        distanceX: '30%', // Size fo the toggle
-        enableEscapeKey: true // Clicking Esc will close the panel
-      });
-    panelExample.close();
-    }
-    // else {
-    //   scotchPanel.close();
-    // }
+  var panelExample = $('#panel').scotchPanel({
+    containerSelector: 'body', // Make this appear on the entire screen
+    direction: 'right', // Make it toggle in from the left
+    duration: 300, // Speed in ms how fast you want it to be
+    transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
+    clickSelector: '#nav-icon', // Enables toggling when clicking elements of this class
+    distanceX: '30%', // Size fo the toggle
+    enableEscapeKey: true // Clicking Esc will close the panel
   });
+
+  // off canvas panel
+  // $(window).resize(function() {
+  //   if ($(window).width() <= 769) {  
+  //     panelExample.close();
+  //   }
+  //   if ($(window).width() > 769) {
+  //     // $('body').removeClass('scotchified');
+  //     $('.scotch-panel-canvas').removeAttr('style');
+  //   }
+  // });
   // $(window).resize(function() {
   //   if ($(window).width() >= 769 && $('.scotch-panel-canvas').hasClass('scotch-is-showing')) {
   //     scotchPanel.close();
@@ -87,14 +116,12 @@
         lightBox.init();
       });
   });
+  checkWidth();
+  windowResize();
+  // $(window).resize(checkWidth());
 })(jQuery);
 
-// $(".mobile_nav").click(function() {
-//   $(".mobile_nav_menu").animate({right: 0});
-// })
-// $(".mobile_close").click(function() {
-//   $(".mobile_nav_menu").animate({right: -270});
-// })
+
 
 
 
