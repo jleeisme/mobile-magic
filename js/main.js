@@ -101,7 +101,8 @@
         var options = {
           index: $index,
           bgOpacity: 0.7,
-          showHideOpacity: true
+          showHideOpacity: true,
+          modal: false
         }
 
         var lightBox = new PhotoSwipe($pswp, PhotoSwipeUI_Default, items, options);
