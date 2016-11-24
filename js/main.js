@@ -1,9 +1,36 @@
+
+
 (function($) {
+
+  // var $window = $(window);
+
+  function checkWidth() {
+    var windowSize = $(window).width();
+    if ($(window).width() > 769) {
+      $('.scotch-panel-canvas').removeAttr('style');
+    }
+    // if ($(window).width() <= 769) {
+    //   $('.scotch-panel-canvas').attr('style');
+    // }
+    else {
+      return;
+    }
+  }
+
+  function windowResize() {
+    if ($(window).resize) {
+      checkWidth();
+    }
+  }
+  
+  // else {
+  //   $('scotch-panel-canvas').attr('style');
+  // }
   
   // header scroller
   $(window).scroll(function () {
     var scroll = $(window).scrollTop()
-    if (scroll > 100) {
+    if (scroll > 10) {
       $(".header").addClass("small")
     } else {
       $(".header").removeClass("small")
@@ -15,7 +42,6 @@
     $(this).toggleClass('open');
   });
 
-  // off canvas panel
   var panelExample = $('#panel').scotchPanel({
     containerSelector: 'body', // Make this appear on the entire screen
     direction: 'right', // Make it toggle in from the left
@@ -25,6 +51,22 @@
     distanceX: '30%', // Size fo the toggle
     enableEscapeKey: true // Clicking Esc will close the panel
   });
+
+  // off canvas panel
+  // $(window).resize(function() {
+  //   if ($(window).width() <= 769) {  
+  //     panelExample.close();
+  //   }
+  //   if ($(window).width() > 769) {
+  //     // $('body').removeClass('scotchified');
+  //     $('.scotch-panel-canvas').removeAttr('style');
+  //   }
+  // });
+  // $(window).resize(function() {
+  //   if ($(window).width() >= 769 && $('.scotch-panel-canvas').hasClass('scotch-is-showing')) {
+  //     scotchPanel.close();
+  //   }
+  // });
 
   // Photoswipe
   var $pswp = $('.pswp')[0];// necessary for Photoswipe
@@ -74,14 +116,12 @@
         lightBox.init();
       });
   });
+  checkWidth();
+  windowResize();
+  // $(window).resize(checkWidth());
 })(jQuery);
 
-// $(".mobile_nav").click(function() {
-//   $(".mobile_nav_menu").animate({right: 0});
-// })
-// $(".mobile_close").click(function() {
-//   $(".mobile_nav_menu").animate({right: -270});
-// })
+
 
 
 
