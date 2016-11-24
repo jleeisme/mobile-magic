@@ -1,31 +1,23 @@
-
-
 (function($) {
 
   // var $window = $(window);
 
-  function checkWidth() {
-    var windowSize = $(window).width();
-    if ($(window).width() > 769) {
-      $('.scotch-panel-canvas').removeAttr('style');
-    }
-    // if ($(window).width() <= 769) {
-    //   $('.scotch-panel-canvas').attr('style');
-    // }
-    else {
-      return;
-    }
-  }
+  // function checkWidth() {
+  //   var windowSize = $(window).width();
+  //   if ($(window).width() > 769) {
+  //     $('.scotch-panel-canvas').removeAttr('style');
+  //   }
+  //   else {
+  //     $('.scotch-panel-canvas').attr('style');
+  //   }
+
+  // }
 
   function windowResize() {
     if ($(window).resize) {
       checkWidth();
     }
   }
-  
-  // else {
-  //   $('scotch-panel-canvas').attr('style');
-  // }
   
   // header scroller
   $(window).scroll(function () {
@@ -42,6 +34,7 @@
     $(this).toggleClass('open');
   });
 
+  // off canvas panel
   var panelExample = $('#panel').scotchPanel({
     containerSelector: 'body', // Make this appear on the entire screen
     direction: 'right', // Make it toggle in from the left
@@ -52,7 +45,6 @@
     enableEscapeKey: true // Clicking Esc will close the panel
   });
 
-  // off canvas panel
   // $(window).resize(function() {
   //   if ($(window).width() <= 769) {  
   //     panelExample.close();
@@ -116,8 +108,8 @@
         lightBox.init();
       });
   });
-  checkWidth();
-  windowResize();
+  // checkWidth();
+  // windowResize();
   // $(window).resize(checkWidth());
 })(jQuery);
 

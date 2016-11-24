@@ -184,6 +184,10 @@ header ul {
 
 @media screen and (min-width: 48em) {
 
+  .scotch-panel-canvas {
+    transform: none !important;
+  }
+
   #panel{
     right: 0 !important;
   }
