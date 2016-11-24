@@ -1,7 +1,5 @@
 (function($) {
 
-  // var $window = $(window);
-
   // function checkWidth() {
   //   var windowSize = $(window).width();
   //   if ($(window).width() > 769) {
@@ -13,11 +11,17 @@
 
   // }
 
-  function windowResize() {
-    if ($(window).resize) {
-      checkWidth();
-    }
-  }
+  // function removeTransform() {
+  //   if ($(window).width > 769) {
+  //     $('.scotch-panel-canvas').css('transform', 'none');
+  //   }
+  // }
+
+  // function windowResize() {
+  //   if ($(window).resize) {
+  //     removeTransform();
+  //   }
+  // }
   
   // header scroller
   $(window).scroll(function () {
@@ -48,10 +52,6 @@
   // $(window).resize(function() {
   //   if ($(window).width() <= 769) {  
   //     panelExample.close();
-  //   }
-  //   if ($(window).width() > 769) {
-  //     // $('body').removeClass('scotchified');
-  //     $('.scotch-panel-canvas').removeAttr('style');
   //   }
   // });
   // $(window).resize(function() {
@@ -108,9 +108,10 @@
         lightBox.init();
       });
   });
-  // checkWidth();
+
+  // removeTransform();
   // windowResize();
-  // $(window).resize(checkWidth());
+  // $(window).resize(removeTransform());
 })(jQuery);
 
 

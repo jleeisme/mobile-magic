@@ -178,7 +178,11 @@ header ul {
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
     top: 39px;
-    left: 8px;
+    left: 9px;
+  }
+
+  .nav-item {
+    margin-bottom: 15px;
   }
 }
 
