@@ -28,8 +28,6 @@ img {
   max-width: 100%;
   height: auto;
   border: 1px solid #000;
-  /*margin: 1px;*/
-  /*padding: 1px;*/
 }
 
 h2 {
@@ -49,17 +47,12 @@ ul {
   margin-left: auto;
   margin-right: auto;
   padding: 0;
-  /*display: block;*/
 }
 
 .image-holder-inner {
   overflow: hidden;
   padding: 0;
   margin-top: 75px;
-
-  /*float: left;*/
-  /*width: 100%;*/
-  /*height: auto;*/
 }
 
 header #nav-icon {
@@ -69,8 +62,6 @@ header #nav-icon {
 header ul {
   display: block;
 }
-
-
 
 /* max & min width 48em --- 768px*/
 @media screen and (max-width: 48em) {
@@ -90,12 +81,7 @@ header ul {
     display: none;
   }
 
-  /*#panel .scotch-panel-right {
-    overflow: visible;
-  }*/
-
   #nav-icon {
-    /*overflow: visible !important;*/
     width: 30px;
     height: 30px;
     position: fixed;
@@ -103,7 +89,6 @@ header ul {
     right: 0;
     margin-top: 23px;
     margin-right: 23px;
-    /*margin: 50px auto;*/
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -121,7 +106,6 @@ header ul {
     height: 5px;
     width: 100%;
     background: #000;
-    /*border-radius: px;*/
     opacity: 1;
     right: 0;
     -webkit-transform: rotate(0deg);
@@ -217,9 +201,7 @@ header ul {
 
   figure.image-box {
     color: #fff;
-    /*float: left;*/
     position: relative;
-    /*overflow: hidden;*/
     width: 33.3333333%;
     background: #000;
     text-align: center;
@@ -246,7 +228,6 @@ header ul {
 
   /* image hover transition with caption is originally from here: */
   /**** http://codepen.io/littlesnippets/pen/YyKpLX ****/
-
   figure.image-box figcaption::before {
     position: absolute;
     top: 50%;
@@ -337,7 +318,6 @@ header ul {
     position: fixed;
     background-color: #fff; 
     overflow: hidden;
-    /*padding: 5px;*/
     z-index: 9999;
     height: 75px;
     -ms-transition: all 0.5s ease-out;
@@ -368,16 +348,12 @@ header ul {
     -webkit-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
-    /*padding: 5px;*/
-    /*padding-bottom: 1%;*/
   }
 
   .header nav ul {
     display: inline-block;
-    /*width: 100%;*/
     margin: 0;
     padding: 0;
-    /*list-style: none; */
   }
 
   .header nav {
@@ -389,7 +365,6 @@ header ul {
     -o-transition: all 0.5s ease-out;
     transition: all 0.5s ease-out;
     padding-right: 12px;
-    /*padding: 10px;*/
   }
 
   .nav-item {
@@ -403,54 +378,3 @@ header ul {
     float: left;
   }
 }
-
-
-/*.mobile_nav {
-  display: none;
-  width: 24px;
-  height: 24px;
-  background: url(http://i.piccy.info/i9/c366d5ab31a3ca2f5b5f5110434b31a9/1399749144/965/744267/mobile_nav.png) no-repeat;
-  float: right;
-  cursor: pointer;
-  margin-top: 2px;
-}
-.mobile_nav_menu {
-  z-index: 3;
-  width: 220px;
-  height: 100%;
-  position: fixed;
-  padding: 11px 22px 0 0;
-  top: 0;
-  right: -270px;
-  background: url(http://i.piccy.info/i9/90d5aef311fc1a9853cce72695cdfe36/1399749183/4243/744267/mobile_nav_bg.png) no-repeat;
-}
-.mobile_menu {
-  float: right;
-  font-weight: 400;
-  font-style: normal;
-  color: #656565;
-  font-size: 15px;
-  line-height: 32px;
-  text-align: right;
-  padding-bottom: 12px;
-  width: 56px;
-}
-.mobile_menu span {
-  cursor: pointer;
-  color: #656565;
-  padding-bottom: 2px;
-}
-.mobile_menu span:hover {
-  transition: all .25s ease-in-out;
-  border-bottom: 2px solid #fff;
-  
-}
-.mobile_close {
-  cursor: pointer;
-  float: right;
-  width: 24px;
-  height: 24px;
-  background: url(http://i.piccy.info/i9/88575af4eb3ecd766a58a62971d3631e/1399749221/1231/744267/x_close.png) no-repeat;
-  background-size: 24px 24px;
-  clear: right;
-}*/
