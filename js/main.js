@@ -49,17 +49,6 @@
     enableEscapeKey: true // Clicking Esc will close the panel
   });
 
-  // $(window).resize(function() {
-  //   if ($(window).width() <= 769) {  
-  //     panelExample.close();
-  //   }
-  // });
-  // $(window).resize(function() {
-  //   if ($(window).width() >= 769 && $('.scotch-panel-canvas').hasClass('scotch-is-showing')) {
-  //     scotchPanel.close();
-  //   }
-  // });
-
   // Photoswipe
   var $pswp = $('.pswp')[0];// necessary for Photoswipe
   var image = [];
