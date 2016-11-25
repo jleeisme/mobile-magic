@@ -114,9 +114,3 @@
   // windowResize();
   // $(window).resize(removeTransform());
 })(jQuery);
-
-
-
-
-
-
