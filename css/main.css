@@ -337,7 +337,7 @@ header ul {
     position: fixed;
     background-color: #fff; 
     overflow: hidden;
-    z-index: 9999;
+    z-index: 99;
     height: 75px;
     -ms-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
