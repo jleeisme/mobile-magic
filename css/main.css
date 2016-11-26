@@ -271,9 +271,10 @@ header ul {
   }
 
   figure.image-box h2 {
-    word-spacing: 0.55em;
+    word-spacing: 0.15em;
     font-weight: 300;
     text-transform: uppercase;
+    letter-spacing: 1px;
     -webkit-transform: translate3d(0%, 50%, 0);
     transform: translate3d(0%, 50%, 0);
     -webkit-transition-delay: 0.3s;
@@ -359,7 +360,7 @@ header ul {
 
   .header h1 {
     margin: 0;
-    margin-left: 2%;
+    margin-left: 1%;
     line-height: 75px;
     letter-spacing: 1px;
     float: left;
