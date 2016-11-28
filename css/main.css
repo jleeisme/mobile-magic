@@ -24,7 +24,6 @@ a {
 }
 
 img {
-  /*width: auto;*/
   max-width: 100%;
   height: auto;
   border: 1px solid #000;
@@ -39,7 +38,7 @@ ul {
 }
 
 .header {
-  width: 99%;
+  width: 98.99%;
 }
 
 .image-holder-outer {
