@@ -26,7 +26,7 @@
   // header scroller
   $(window).scroll(function () {
     var scroll = $(window).scrollTop()
-    if (scroll > 10) {
+    if (scroll > 40) {
       $(".header").addClass("small")
     } else {
       $(".header").removeClass("small")
