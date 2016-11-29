@@ -125,6 +125,7 @@ header ul {
     background: #000;
     opacity: 1;
     right: 0;
+    border-radius: 9px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
