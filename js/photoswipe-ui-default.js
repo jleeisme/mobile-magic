@@ -61,7 +61,7 @@ var PhotoSwipeUI_Default =
 				captionEl.children[0].innerHTML = item.title;
 				return true;
 			},
-
+			
 			closeEl:true,
 			captionEl: true,
 			fullscreenEl: true,
