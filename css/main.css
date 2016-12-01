@@ -65,6 +65,7 @@ header ul {
   display: block;
 }
 
+/* ipad portrait */
 @media screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
@@ -80,7 +81,7 @@ header ul {
     }
 }
 
-/* max & min width 46em --- 736px*/
+/* little screens */
 @media screen and (max-width: 47.999em) { /* hacked */
   figure.image-box h2 {
     display: none;
@@ -98,6 +99,7 @@ header ul {
     display: none;
   }
 
+  /* burger and it's transformation */
   #nav-icon {
     width: 30px;
     height: 30px;
@@ -200,8 +202,10 @@ header ul {
   }
 }
 
+/* big screens */
 @media screen and (min-width: 48em) {
 
+  /* scotch panels binds some styles that interfere */
   .scotch-panel-canvas {
     transform: none !important;
   }
@@ -289,15 +293,6 @@ header ul {
     -webkit-transition-delay: 0s;
     transition-delay: 0s;
   }
-
-  /*figure.image-box a {
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    color: #ffffff;
-  }*/
 
   figure.image-box:hover img {
     opacity: 0.35;
@@ -393,5 +388,4 @@ header ul {
     position: relative;
     padding: 5px 10px;
   }
-
 }
