@@ -1,27 +1,4 @@
 (function($) {
-
-  // function checkWidth() {
-  //   var windowSize = $(window).width();
-  //   if ($(window).width() > 769) {
-  //     $('.scotch-panel-canvas').removeAttr('style');
-  //   }
-  //   else {
-  //     $('.scotch-panel-canvas').attr('style');
-  //   }
-
-  // }
-
-  // function removeTransform() {
-  //   if ($(window).width > 769) {
-  //     $('.scotch-panel-canvas').css('transform', 'none');
-  //   }
-  // }
-
-  // function windowResize() {
-  //   if ($(window).resize) {
-  //     removeTransform();
-  //   }
-  // }
   
   // header scroller
   $(window).scroll(function () {
@@ -98,7 +75,4 @@
       });
   });
 
-  // removeTransform();
-  // windowResize();
-  // $(window).resize(removeTransform());
 })(jQuery);
