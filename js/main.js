@@ -40,7 +40,7 @@
             $size = $(this).data('size').split('x'),
             $width = $size[0],
             $height = $size[1],
-            $title = $(this).find('img').attr('alt');
+            $title = $(this).find('img').attr('alt'); //for captions
 
           var item = {
             src : $href,
