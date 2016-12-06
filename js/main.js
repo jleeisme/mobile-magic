@@ -18,11 +18,11 @@
   // off canvas panel
   var panelExample = $('#panel').scotchPanel({
     containerSelector: 'body', // Make this appear on the entire screen
-    direction: 'right', // Make it toggle in from the left
-    duration: 300, // Speed in ms how fast you want it to be
+    direction: 'right', // Make it toggle in from the right
+    duration: 300, // ms speed of transition
     transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
     clickSelector: '#nav-icon', // Enables toggling when clicking elements of this class
-    distanceX: '30%', // Size fo the toggle
+    distanceX: '30%', // Size of the toggle
     enableEscapeKey: true // Clicking Esc will close the panel
   });
 
@@ -40,7 +40,7 @@
             $size = $(this).data('size').split('x'),
             $width = $size[0],
             $height = $size[1],
-            $title = $(this).find('img').attr('alt'); //for captions
+            $title = $(this).find('img').attr('alt'); //for captions inside pwsp which aren't currently used
 
           var item = {
             src : $href,
