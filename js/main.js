@@ -1,5 +1,5 @@
 (function($) {
-  
+
   // header scroller
   $(window).scroll(function () {
     var scroll = $(window).scrollTop()
@@ -14,6 +14,16 @@
   $('#nav-icon').on('click', function() {
     $(this).toggleClass('open');
   });
+
+  // spacing magnifies the out of alignment of the .nav-item on mobile
+  // only checks on window load, so resizing has no part. Only really noticeable if
+  // you cruise your desktop screen < 600 
+  if($(window).width() < 769) {
+    // console.log('small window');
+    $('.nav-item').each(function(){
+      $(this).html($(this).html().replace(/&nbsp;/gi,''));
+    }); 
+  }
 
   // var $twoClasses = $('.nav-name', '.nav-item');
   // $('#nav-name').on('mouseenter', function() {
