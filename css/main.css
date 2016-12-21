@@ -70,7 +70,7 @@ li a {
   padding-top: 1px;
   border-radius: 3px;
   border: 1px solid;*/
-  transition: 0.4s ease-in-out;
+  transition: 0.7s ease-in-out;
 }
 
 /* ipad portrait */
@@ -368,7 +368,7 @@ li a {
     margin: 0;
     margin-left: 1%;
     line-height: 75px;
-    letter-spacing: 1px;
+    /*letter-spacing: 1px;*/
     float: left;
     -ms-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -398,5 +398,14 @@ li a {
     display: inline-block;
     position: relative;
     padding: 5px 3px;
+  }
+
+  .nav-name {
+    transition: all 0.7s ease-in-out;
+  }
+
+  .nav-name:hover {
+    color: #bc4b4b;
+    transition: all 0.2s ease-in-out;
   }
 }
