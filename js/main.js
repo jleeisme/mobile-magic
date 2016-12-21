@@ -11,16 +11,21 @@
   });
 
   // transition for the nav-icon to open and close
-  $('#nav-icon').on('click', function(){
+  $('#nav-icon').on('click', function() {
     $(this).toggleClass('open');
   });
+
+  // var $twoClasses = $('.nav-name', '.nav-item');
+  // $('#nav-name').on('mouseenter', function() {
+  //   $(this).toggleClass('go-red');
+  // })
 
   // off canvas panel
   var panelExample = $('#panel').scotchPanel({
     containerSelector: 'body', // Make this appear on the entire screen
     direction: 'right', // Make it toggle in from the right
     duration: 300, // ms speed of transition
-    transition: 'ease', // CSS3 transition type: linear, ease, ease-in, ease-out, ease-in-out, cubic-bezier(P1x,P1y,P2x,P2y)
+    transition: 'ease',
     clickSelector: '#nav-icon', // Enables toggling when clicking elements of this class
     distanceX: '30%', // Size of the toggle
     enableEscapeKey: true // Clicking Esc will close the panel
