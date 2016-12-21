@@ -20,7 +20,8 @@ a {
   margin: 0;
   text-decoration: none;
   color: #000;
-  font-size: 1.2em;
+  font-size: 1.3em;
+  letter-spacing: .1px;
 }
 
 img {
@@ -70,7 +71,7 @@ li a {
   padding-top: 1px;
   border-radius: 3px;
   border: 1px solid;*/
-  transition: 0.7s ease-in-out;
+  /*transition: all 0.4s ease;*/
 }
 
 /* ipad portrait */
@@ -331,11 +332,16 @@ li a {
   }
 
   li a:hover {
-    /*color: #505050;*/
     color: #bc4b4b;
-    /*background: #505050;*/
-    transition: all 0.4s ease-in-out;
   }
+
+  /*li a:after {
+    transition: all 1s ease-in-out;
+  }*/
+
+  /*li a:hover: {
+    color: #bc4b4b;
+  }*/
 
   .header {
     top: 0;
@@ -397,15 +403,20 @@ li a {
     list-style: none;
     display: inline-block;
     position: relative;
-    padding: 5px 3px;
+    padding: 5px 0px;
+  }
+
+  .go-red {
+    transition: all 0.4s ease-in-out;
+    color: #bc4b4b;
   }
 
   .nav-name {
-    transition: all 0.7s ease-in-out;
+    /*transition: all 0.2s ease-in-out;*/
   }
 
-  .nav-name:hover {
+  /*.nav-name:hover {
     color: #bc4b4b;
     transition: all 0.2s ease-in-out;
-  }
+  }*/
 }
