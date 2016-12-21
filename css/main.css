@@ -66,13 +66,6 @@ header ul {
   display: block;
 }
 
-li a {
-  /*padding: 5px;
-  padding-top: 1px;
-  border-radius: 3px;
-  border: 1px solid;*/
-  /*transition: all 0.4s ease;*/
-}
 
 /* ipad portrait */
 @media screen 
@@ -115,7 +108,7 @@ li a {
     position: fixed;
     top: 0;
     right: 0;
-    margin-top: 23px;
+    margin-top: 15px;
     margin-right: 23px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -208,6 +201,7 @@ li a {
 
   h1 {
     padding-left: 20px;
+    font-size: 1.6em;
   }
 }
 
@@ -403,13 +397,23 @@ li a {
     list-style: none;
     display: inline-block;
     position: relative;
-    padding: 5px 0px;
+    padding: 8px 1px;
   }
 
   .go-red {
     transition: all 0.4s ease-in-out;
     color: #bc4b4b;
   }
+
+  li a {
+  border-right: 1px solid;
+  border-left: 1px solid;
+  /*padding: 5px;
+  padding-top: 1px;
+  border-radius: 3px;
+  border: 1px solid;*/
+  /*transition: all 0.4s ease;*/
+}
 
   .nav-name {
     /*transition: all 0.2s ease-in-out;*/
