@@ -406,8 +406,8 @@ header ul {
   }
 
   li a {
-  border-right: 1px solid;
-  border-left: 1px solid;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
   /*padding: 5px;
   padding-top: 1px;
   border-radius: 3px;
