@@ -66,7 +66,6 @@ header ul {
   display: block;
 }
 
-
 /* ipad portrait */
 @media screen 
   and (min-device-width: 768px) 
@@ -81,7 +80,7 @@ header ul {
     .header {
       width: 95%;
     }
-}
+  }
 
 /* little screens */
 @media screen and (max-width: 47.999em) { /* hacked */
@@ -329,14 +328,6 @@ header ul {
     color: #bc4b4b;
   }
 
-  /*li a:after {
-    transition: all 1s ease-in-out;
-  }*/
-
-  /*li a:hover: {
-    color: #bc4b4b;
-  }*/
-
   .header {
     top: 0;
     position: fixed;
@@ -368,7 +359,6 @@ header ul {
     margin: 0;
     margin-left: 1%;
     line-height: 75px;
-    /*letter-spacing: 1px;*/
     float: left;
     -ms-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;
@@ -406,21 +396,8 @@ header ul {
   }
 
   li a {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  /*padding: 5px;
-  padding-top: 1px;
-  border-radius: 3px;
-  border: 1px solid;*/
-  /*transition: all 0.4s ease;*/
-}
-
-  .nav-name {
-    /*transition: all 0.2s ease-in-out;*/
+    border-top: 1px solid;
+    border-bottom: 1px solid;
   }
 
-  /*.nav-name:hover {
-    color: #bc4b4b;
-    transition: all 0.2s ease-in-out;
-  }*/
 }
