@@ -1,7 +1,7 @@
 (function($) {
 
   // header scroller
-  $(window).scroll(function () {
+  $(window).scroll(() => {
     var scroll = $(window).scrollTop()
     if (scroll > 40) {
       $(".header").addClass("small")
@@ -11,7 +11,7 @@
   });
 
   // transition for the nav-icon to open and close
-  $('#nav-icon').on('click', function() {
+  $('#nav-icon').on('click', () => {
     $(this).toggleClass('open');
   });
 
@@ -20,7 +20,7 @@
   // you cruise your desktop screen < 600 
   if($(window).width() < 769) {
     // console.log('small window');
-    $('.nav-item').each(function(){
+    $('.nav-item').each(() => {
       $(this).html($(this).html().replace(/&nbsp;/gi,''));
     }); 
   }
