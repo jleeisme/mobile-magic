@@ -19,7 +19,6 @@
   // only checks on window load, so resizing has no part. Only really noticeable if
   // you cruise your desktop screen < 600 
   if($(window).width() < 769) {
-    // console.log('small window');
     $('.nav-item').each(() => {
       $(this).html($(this).html().replace(/&nbsp;/gi,''));
     }); 
@@ -40,8 +39,10 @@
     distanceX: '30%', // Size of the toggle
     enableEscapeKey: true // Clicking Esc will close the panel
   });
-
-  // Photoswipe
+  
+  // ******************
+  // ******************
+  // ******* Photoswipe
   var $pswp = $('.pswp')[0];// necessary for Photoswipe
   var image = [];
 
