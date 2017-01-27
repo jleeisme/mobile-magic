@@ -19,7 +19,7 @@
   // only checks on window load, so resizing has no part. Only really noticeable if
   // you cruise your desktop screen < 600 
   if($(window).width() < 769) {
-    $('.nav-item').each(() => {
+    $('.nav-item').each(function() {
       $(this).html($(this).html().replace(/&nbsp;/gi,''));
     }); 
   }
